@@ -8,7 +8,7 @@ namespace SolarCompanyWebsite.Services
     public class LocationService
     {
         private readonly HttpClient _httpClient;
-        private const string GoogleGeocodeApiKey = "AIzaSyCoIQ5_W_uCCRywMXI2ep5nBeXQ4ZZpmOU";
+        private const string GoogleGeocodeApiKey = "My Key";
         private const string GoogleGeocodeUrl = "https://maps.googleapis.com/maps/api/geocode/json";
         private const string GoogleSolarApiUrl = "https://solar.googleapis.com/v1/buildingInsights:findClosest";
 
