@@ -1,0 +1,12 @@
+@{
+    ViewData["Title"] = "Solar Estimate";
+}
+
+<section class="solar-estimate-section">
+    <h2>Get Your Solar Estimate</h2>
+    <form method="post" action="/Location/GetLocationData">
+        <label for="address">Enter Address:</label>
+        <input type="text" id="address" name="address" placeholder="Enter your address" required />
+        <button type="submit" class="btn">Get Solar Estimate</button>
+    </form>
+</section>

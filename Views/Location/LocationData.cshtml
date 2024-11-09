@@ -1,0 +1,14 @@
+@{
+    ViewData["Title"] = "Location and Solar Data";
+}
+
+<h2>Location and Solar Data for @ViewBag.Address</h2>
+
+<h3>Coordinates:</h3>
+<p>Latitude: @ViewBag.Latitude</p>
+<p>Longitude: @ViewBag.Longitude</p>
+
+<h3>Solar Data:</h3>
+<pre>@ViewBag.SolarData</pre>
+
+<a href="/Location">Search Another Address</a>

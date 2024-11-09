@@ -1,0 +1,15 @@
+@{
+    ViewData["Title"] = "Find Solar Data by Address";
+}
+
+<h2>Find Solar Data</h2>
+<form method="post" action="/Location/GetLocationData">
+    <label for="address">Enter Address:</label>
+    <input type="text" id="address" name="address" required />
+    <button type="submit">Get Solar Data</button>
+</form>
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <p style="color: red;">@ViewData.ModelState[""].Errors[0].ErrorMessage</p>
+}
