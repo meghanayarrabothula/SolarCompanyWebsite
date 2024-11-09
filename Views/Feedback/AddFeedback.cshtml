@@ -1,0 +1,12 @@
+@{
+    ViewData["Title"] = "Add Feedback";
+}
+
+<section class="add-feedback-section">
+    <h2>Submit Your Feedback</h2>
+    <form method="post" action="/Feedback/SubmitFeedback">
+        <label for="feedback">Your Feedback</label>
+        <textarea id="feedback" name="feedback" rows="5" required></textarea>
+        <button type="submit" class="btn">Submit Feedback</button>
+    </form>
+</section>

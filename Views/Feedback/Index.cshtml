@@ -1,0 +1,19 @@
+@model List<string>
+@{
+    ViewData["Title"] = "Feedback";
+}
+
+<section class="feedback-section">
+    <h2>Client Feedback</h2>
+    @if (TempData["Message"] != null)
+    {
+        <p class="success-message">@TempData["Message"]</p>
+    }
+    <ul>
+        @foreach (var feedback in Model)
+        {
+            <li>@feedback</li>
+        }
+    </ul>
+    <a href="/Feedback/AddFeedback" class="btn">Add Your Feedback</a>
+</section>
