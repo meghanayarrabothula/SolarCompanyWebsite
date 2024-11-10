@@ -66,3 +66,37 @@
 /Users/meghanayarrabothula/Downloads/DIS/SolarCompanyWebsite/obj/Debug/net8.0/SolarCompanyWebsite.pdb
 /Users/meghanayarrabothula/Downloads/DIS/SolarCompanyWebsite/obj/Debug/net8.0/SolarCompanyWebsite.genruntimeconfig.cache
 /Users/meghanayarrabothula/Downloads/DIS/SolarCompanyWebsite/obj/Debug/net8.0/ref/SolarCompanyWebsite.dll
+C:\Users\Dheeraj Mekala\Source\Repos\SolarCompanyWebsite\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Dheeraj Mekala\Source\Repos\SolarCompanyWebsite\bin\Debug\net8.0\appsettings.json
+C:\Users\Dheeraj Mekala\Source\Repos\SolarCompanyWebsite\bin\Debug\net8.0\SolarCompanyWebsite.staticwebassets.runtime.json
+C:\Users\Dheeraj Mekala\Source\Repos\SolarCompanyWebsite\bin\Debug\net8.0\SolarCompanyWebsite.exe
+C:\Users\Dheeraj Mekala\Source\Repos\SolarCompanyWebsite\bin\Debug\net8.0\SolarCompanyWebsite.deps.json
+C:\Users\Dheeraj Mekala\Source\Repos\SolarCompanyWebsite\bin\Debug\net8.0\SolarCompanyWebsite.runtimeconfig.json
+C:\Users\Dheeraj Mekala\Source\Repos\SolarCompanyWebsite\bin\Debug\net8.0\SolarCompanyWebsite.dll
+C:\Users\Dheeraj Mekala\Source\Repos\SolarCompanyWebsite\bin\Debug\net8.0\SolarCompanyWebsite.pdb
+C:\Users\Dheeraj Mekala\Source\Repos\SolarCompanyWebsite\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Dheeraj Mekala\Source\Repos\SolarCompanyWebsite\obj\Debug\net8.0\SolarCompanyWebsite.csproj.AssemblyReference.cache
+C:\Users\Dheeraj Mekala\Source\Repos\SolarCompanyWebsite\obj\Debug\net8.0\SolarCompanyWebsite.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dheeraj Mekala\Source\Repos\SolarCompanyWebsite\obj\Debug\net8.0\SolarCompanyWebsite.AssemblyInfoInputs.cache
+C:\Users\Dheeraj Mekala\Source\Repos\SolarCompanyWebsite\obj\Debug\net8.0\SolarCompanyWebsite.AssemblyInfo.cs
+C:\Users\Dheeraj Mekala\Source\Repos\SolarCompanyWebsite\obj\Debug\net8.0\SolarCompanyWebsite.csproj.CoreCompileInputs.cache
+C:\Users\Dheeraj Mekala\Source\Repos\SolarCompanyWebsite\obj\Debug\net8.0\SolarCompanyWebsite.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Dheeraj Mekala\Source\Repos\SolarCompanyWebsite\obj\Debug\net8.0\SolarCompanyWebsite.RazorAssemblyInfo.cache
+C:\Users\Dheeraj Mekala\Source\Repos\SolarCompanyWebsite\obj\Debug\net8.0\SolarCompanyWebsite.RazorAssemblyInfo.cs
+C:\Users\Dheeraj Mekala\Source\Repos\SolarCompanyWebsite\obj\Debug\net8.0\SolarCompanyWebsite.sourcelink.json
+C:\Users\Dheeraj Mekala\Source\Repos\SolarCompanyWebsite\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Dheeraj Mekala\Source\Repos\SolarCompanyWebsite\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Dheeraj Mekala\Source\Repos\SolarCompanyWebsite\obj\Debug\net8.0\staticwebassets\msbuild.SolarCompanyWebsite.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Dheeraj Mekala\Source\Repos\SolarCompanyWebsite\obj\Debug\net8.0\staticwebassets\msbuild.build.SolarCompanyWebsite.props
+C:\Users\Dheeraj Mekala\Source\Repos\SolarCompanyWebsite\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.SolarCompanyWebsite.props
+C:\Users\Dheeraj Mekala\Source\Repos\SolarCompanyWebsite\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.SolarCompanyWebsite.props
+C:\Users\Dheeraj Mekala\Source\Repos\SolarCompanyWebsite\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Dheeraj Mekala\Source\Repos\SolarCompanyWebsite\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Dheeraj Mekala\Source\Repos\SolarCompanyWebsite\obj\Debug\net8.0\scopedcss\bundle\SolarCompanyWebsite.styles.css
+C:\Users\Dheeraj Mekala\Source\Repos\SolarCompanyWebsite\obj\Debug\net8.0\scopedcss\projectbundle\SolarCompanyWebsite.bundle.scp.css
+C:\Users\Dheeraj Mekala\Source\Repos\SolarCompanyWebsite\obj\Debug\net8.0\SolarCom.097E800C.Up2Date
+C:\Users\Dheeraj Mekala\Source\Repos\SolarCompanyWebsite\obj\Debug\net8.0\SolarCompanyWebsite.dll
+C:\Users\Dheeraj Mekala\Source\Repos\SolarCompanyWebsite\obj\Debug\net8.0\refint\SolarCompanyWebsite.dll
+C:\Users\Dheeraj Mekala\Source\Repos\SolarCompanyWebsite\obj\Debug\net8.0\SolarCompanyWebsite.pdb
+C:\Users\Dheeraj Mekala\Source\Repos\SolarCompanyWebsite\obj\Debug\net8.0\SolarCompanyWebsite.genruntimeconfig.cache
+C:\Users\Dheeraj Mekala\Source\Repos\SolarCompanyWebsite\obj\Debug\net8.0\ref\SolarCompanyWebsite.dll
