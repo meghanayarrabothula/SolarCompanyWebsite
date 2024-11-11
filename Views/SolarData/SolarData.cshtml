@@ -1,0 +1,71 @@
+﻿@{
+    ViewBag.Title = "Solar Data Estimate";
+}
+
+<h2>Solar Data Estimate</h2>
+<p><strong>Address:</strong> @ViewBag.Address</p>
+<p><strong>Latitude:</strong> @ViewBag.Latitude</p>
+<p><strong>Longitude:</strong> @ViewBag.Longitude</p>
+
+<!-- Load Chart.js from CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<div>
+    <h3>Visualized Solar Potential Data</h3>
+
+    <!-- Slider for selecting index -->
+    <input type="range" id="indexSlider" min="0" max="@ViewBag.SolarData.financialAnalyses.Length - 1" value="0" oninput="updateCharts(this.value)">
+    <p>Selected Index: <span id="selectedIndex">0</span></p>
+    <p>Monthly Bill Units: <span id="monthlyBillUnits">@ViewBag.SolarData.financialAnalyses[0].monthlyBill.units</span></p>
+
+    <!-- 6. Environmental Impact - CO₂ Offset (Pie Chart) -->
+    <canvas id="co2OffsetChart"></canvas>
+</div>
+
+<script>
+    function updateCharts(index) {
+        document.getElementById('selectedIndex').textContent = index;
+        const financialAnalysis = @Html.Raw(Json.Serialize(ViewBag.SolarData.financialAnalyses));
+        const selectedData = financialAnalysis[index];
+
+        // Update monthly bill units display
+        document.getElementById('monthlyBillUnits').textContent = selectedData.monthlyBill.units;
+    }
+
+    // Initialize charts
+    const co2OffsetChart = new Chart(document.getElementById('co2OffsetChart'), {
+        type: 'pie',
+        data: {
+            labels: ['CO₂ Offset', 'CO₂ Not Offset'],
+            datasets: [
+                {
+                    data: [60, 40], // Example values for CO₂ offset
+                    backgroundColor: ['#36a2eb', '#ff6384']
+                }
+            ]
+        }
+    });
+</script>
+
+<style>
+    canvas {
+        max-width: 600px;
+        margin: 20px auto;
+    }
+
+    h2, h3 {
+        text-align: center;
+        color: #333;
+    }
+
+    div {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #indexSlider {
+        max-width: 600px;
+        margin: 20px auto;
+        height: 15px;
+    }
+</style>

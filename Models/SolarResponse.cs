@@ -9,7 +9,9 @@ namespace SolarCompanyWebsite.Models
 
     public class SolarPotential
     {
+        public int maxArrayPanelsCount { get; set; }
         public float maxArrayAreaMeters2 { get; set; }
+        public float maxSunshineHoursPerYear { get; set; }
         public float carbonOffsetFactorKgPerMwh { get; set; }
         public FinancialAnalysis[] financialAnalyses { get; set; }
         public float yearlyEnergyDcKwh { get; set; }
