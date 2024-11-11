@@ -17,24 +17,29 @@ public class Appointment
 
         [Required]
         [StringLength(100)]
-        public string Name { get; set; } = "Dheeraj";
+        public string Name { get; set; }
 
         [Required]
         [StringLength(200)]
-        public string Address { get; set; } = "14210, Cyber Place, Tampa, Florida";
+        public string Address { get; set; }
 
         [Required]
         [Phone]
-        public string PhoneNumber { get; set; } = "6569521218";
+        public string PhoneNumber { get; set; }
 
         [Required]
         [EmailAddress]
-        public string Email { get; set; } = "dmekalamkv@usf.edu";
+        public string Email { get; set; }
 
         [Required]
-        public DateTime AppointmentDate { get; set; } = DateTime.Today;// The date of the appointment
-
         
+        public string PurchasePreference { get; set; }
+
+        [Required]
+        public DateTime AppointmentDate { get; set; } = DateTime.Today.AddDays(1);// The date of the appointment
+
+
+
         public TimeSpan AvailableFrom { get; set; } = new TimeSpan(9, 0, 0); // The time when the customer is free from
 
         

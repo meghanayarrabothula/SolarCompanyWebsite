@@ -48,6 +48,7 @@ namespace SolarCompanyWebsite.Services
             appointment.Address = updatedAppointment.Address;
             appointment.PhoneNumber = updatedAppointment.PhoneNumber;
             appointment.Email = updatedAppointment.Email;
+            appointment.PurchasePreference = updatedAppointment.PurchasePreference;
             appointment.AppointmentDate = updatedAppointment.AppointmentDate;
             appointment.AvailableFrom = updatedAppointment.AvailableFrom;
             appointment.AvailableUntil = updatedAppointment.AvailableUntil;

@@ -20,6 +20,8 @@ namespace SolarCompanyWebsite.Controllers
             return View(appointments);
         }
 
+       
+
         // GET: /Appointments/Create - Show form to create a new appointment
         public IActionResult Create()
         {

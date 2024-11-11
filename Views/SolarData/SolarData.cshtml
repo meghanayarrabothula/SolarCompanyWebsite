@@ -18,14 +18,28 @@
     <p>Selected Index: <span id="selectedIndex">0</span></p>
     <p>Monthly Bill Units: <span id="monthlyBillUnits">@ViewBag.SolarData.financialAnalyses[0].monthlyBill.units</span></p>
 
+    <!-- 1. Cumulative Savings Comparison (Bar Chart) -->
+    <canvas id="cumulativeSavingsChart"></canvas>
+
+    <!-- 2. Cash upfront Cost Breakdown with Incentives (Stacked Bar Chart) -->
+    <canvas id="upfrontCostChart"></canvas>
+
+    <!-- 3. Bill Comparison Lifetime with and without Solar (Bar Chart) -->
+    <canvas id="billComparisonChart"></canvas>
+
     <!-- 6. Environmental Impact - CO₂ Offset (Pie Chart) -->
     <canvas id="co2OffsetChart"></canvas>
 
+    <!-- 7. Roof Usable Area vs. Maximum Array Area (Bar Chart) -->
+    <canvas id="roofAreaChart"></canvas>
 
-<!-- Button to book a personal consultation appointment -->
-<div style="center-bottom: 20px;">
-    <a href="/Appointments/Index" class="btn btn-primary">Book a Personal Consultation Appointment</a>
-</div>
+    <!-- 8. Leasing vs. Cash Purchase vs. Financed Purchase Costs (Bar Chart) -->
+    <canvas id="purchaseOptionsChart"></canvas>
+
+    <!-- Button to book a personal consultation appointment -->
+    <div style="margin-top: 20px;">
+        <a href="/appointments/index" class="btn btn-primary">Book a Personal Consultation Appointment</a>
+    </div>
 </div>
 
 <script>
@@ -36,21 +50,123 @@
 
         // Update monthly bill units display
         document.getElementById('monthlyBillUnits').textContent = selectedData.monthlyBill.units;
+
+        // 1. Cumulative Savings Comparison (Bar Chart)
+        cumulativeSavingsChart.data.datasets[0].data = [
+            selectedData.leasingSavings.savings.savingsYear1.units,
+            selectedData.leasingSavings.savings.savingsYear20.units,
+            selectedData.cashPurchaseSavings.savings.savingsYear1.units,
+            selectedData.cashPurchaseSavings.savings.savingsYear20.units,
+            selectedData.financedPurchaseSavings.savings.savingsYear1.units,
+            selectedData.financedPurchaseSavings.savings.savingsYear20.units
+        ];
+        cumulativeSavingsChart.update();
+
+        // 2. Upfront Cost Breakdown with Incentives (Stacked Bar Chart)
+        upfrontCostChart.data.datasets[0].data = [
+            selectedData.financialDetails.federalIncentive.units,
+            selectedData.cashPurchaseSavings.rebateValue.units,
+            selectedData.cashPurchaseSavings.outOfPocketCost.units,
+            selectedData.cashPurchaseSavings.upfrontCost.units
+        ];
+        upfrontCostChart.update();
+
+        // 3. Bill Comparison Lifetime with and without Solar (Bar Chart)
+        billComparisonChart.data.datasets[0].data = [
+            selectedData.financialDetails.costOfElectricityWithoutSolar.units,
+            selectedData.financialDetails.remainingLifetimeUtilityBill.units
+        ];
+        billComparisonChart.update();
+
+        // 6. Environmental Impact - CO₂ Offset (Pie Chart)
+        co2OffsetChart.data.datasets[0].data = [
+            @ViewBag.SolarData.carbonOffsetFactorKgPerMwh, // Assuming there's a CO₂ offset value
+            100 - @ViewBag.SolarData.carbonOffsetFactorKgPerMwh
+        ];
+        co2OffsetChart.update();
+
+        // 7. Roof Usable Area vs. Maximum Array Area (Bar Chart)
+        roofAreaChart.data.datasets[0].data = [
+            @ViewBag.SolarData.maxArrayAreaMeters2,
+            @ViewBag.SolarData.wholeRoofStats.areaMeters2
+        ];
+        roofAreaChart.update();
+
+        // 8. Leasing vs. Cash Purchase vs. Financed Purchase Costs (Bar Chart)
+        purchaseOptionsChart.data.datasets[0].data = [
+            selectedData.leasingSavings.savings.savingsLifetime.units,
+            selectedData.cashPurchaseSavings.savings.savingsLifetime.units,
+            selectedData.financedPurchaseSavings.savings.savingsLifetime.units
+        ];
+        purchaseOptionsChart.update();
     }
 
     // Initialize charts
+    const cumulativeSavingsChart = new Chart(document.getElementById('cumulativeSavingsChart'), {
+        type: 'bar',
+        data: {
+            labels: ['Leasing Savings Year 1', 'Leasing Savings Year 20', 'Cash Purchase Year 1', 'Cash Purchase Year 20', 'Financed Purchase Year 1', 'Financed Purchase Year 20'],
+            datasets: [
+                { label: 'Cumulative Savings Comparison', data: [], backgroundColor: ['#36a2eb', '#ff6384', '#4bc0c0', '#ff9f40', '#9966ff', '#c9cbcf'] }
+            ]
+        }
+    });
+
+    const upfrontCostChart = new Chart(document.getElementById('upfrontCostChart'), {
+        type: 'bar',
+        data: {
+            labels: ['Federal Incentive', 'Rebate Value', 'Out of Pocket Cost', 'Upfront Cost'],
+            datasets: [
+                { label: 'Upfront Cost Breakdown', data: [], backgroundColor: ['#36a2eb', '#ff6384', '#4bc0c0', '#ff9f40'] }
+            ]
+        }
+    });
+
+    const billComparisonChart = new Chart(document.getElementById('billComparisonChart'), {
+        type: 'bar',
+        data: {
+            labels: ['Without Solar', 'With Solar'],
+            datasets: [
+                { label: 'Lifetime Bill Comparison', data: [], backgroundColor: ['#ff6384', '#36a2eb'] }
+            ]
+        }
+    });
+
     const co2OffsetChart = new Chart(document.getElementById('co2OffsetChart'), {
         type: 'pie',
         data: {
             labels: ['CO₂ Offset', 'CO₂ Not Offset'],
             datasets: [
                 {
-                    data: [60, 40], // Example values for CO₂ offset
+                    data: [60, 40], // Placeholder values, will be updated
                     backgroundColor: ['#36a2eb', '#ff6384']
                 }
             ]
         }
     });
+
+    const roofAreaChart = new Chart(document.getElementById('roofAreaChart'), {
+        type: 'bar',
+        data: {
+            labels: ['Maximum Array Area', 'Usable Roof Area'],
+            datasets: [
+                { label: 'Roof Area Comparison', data: [], backgroundColor: ['#4bc0c0', '#ff9f40'] }
+            ]
+        }
+    });
+
+    const purchaseOptionsChart = new Chart(document.getElementById('purchaseOptionsChart'), {
+        type: 'bar',
+        data: {
+            labels: ['Leasing', 'Cash Purchase', 'Financed Purchase'],
+            datasets: [
+                { label: 'Lifetime Savings Comparison', data: [], backgroundColor: ['#36a2eb', '#ff6384', '#4bc0c0'] }
+            ]
+        }
+    });
+
+    // Initialize with default index 0
+    updateCharts(0);
 </script>
 
 <style>
@@ -73,5 +189,17 @@
         max-width: 600px;
         margin: 20px auto;
         height: 15px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .btn:hover {
+        background-color: #0056b3;
     }
 </style>

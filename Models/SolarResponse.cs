@@ -13,8 +13,17 @@ namespace SolarCompanyWebsite.Models
         public float maxArrayAreaMeters2 { get; set; }
         public float maxSunshineHoursPerYear { get; set; }
         public float carbonOffsetFactorKgPerMwh { get; set; }
+        public SizeAndSunshineStats wholeRoofStats { get; set; }
+
         public FinancialAnalysis[] financialAnalyses { get; set; }
         public float yearlyEnergyDcKwh { get; set; }
+    }
+
+    public class SizeAndSunshineStats { 
+        
+     public float areaMeters2 { get; set; }
+
+
     }
 
     public class FinancialAnalysis
