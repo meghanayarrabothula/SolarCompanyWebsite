@@ -9,75 +9,75 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SolarCompanyWebsite
 build_property.RootNamespace = SolarCompanyWebsite
-build_property.ProjectDir = /Users/meghanayarrabothula/Downloads/DIS/SolarCompanyWebsite/
+build_property.ProjectDir = C:\Users\Dheeraj Mekala\Source\Repos\SolarCompanyWebsite\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/meghanayarrabothula/Downloads/DIS/SolarCompanyWebsite
+build_property.MSBuildProjectDirectory = C:\Users\Dheeraj Mekala\Source\Repos\SolarCompanyWebsite
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/meghanayarrabothula/Downloads/DIS/SolarCompanyWebsite/Views/Feedback/AddFeedback.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmVlZGJhY2svQWRkRmVlZGJhY2suY3NodG1s
+[C:/Users/Dheeraj Mekala/Source/Repos/SolarCompanyWebsite/Views/Feedback/AddFeedback.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZGJhY2tcQWRkRmVlZGJhY2suY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/meghanayarrabothula/Downloads/DIS/SolarCompanyWebsite/Views/Feedback/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmVlZGJhY2svSW5kZXguY3NodG1s
+[C:/Users/Dheeraj Mekala/Source/Repos/SolarCompanyWebsite/Views/Feedback/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZGJhY2tcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/meghanayarrabothula/Downloads/DIS/SolarCompanyWebsite/Views/Home/About.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BYm91dC5jc2h0bWw=
+[C:/Users/Dheeraj Mekala/Source/Repos/SolarCompanyWebsite/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/meghanayarrabothula/Downloads/DIS/SolarCompanyWebsite/Views/Home/Contact.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Db250YWN0LmNzaHRtbA==
+[C:/Users/Dheeraj Mekala/Source/Repos/SolarCompanyWebsite/Views/Home/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/meghanayarrabothula/Downloads/DIS/SolarCompanyWebsite/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+[C:/Users/Dheeraj Mekala/Source/Repos/SolarCompanyWebsite/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/meghanayarrabothula/Downloads/DIS/SolarCompanyWebsite/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+[C:/Users/Dheeraj Mekala/Source/Repos/SolarCompanyWebsite/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/meghanayarrabothula/Downloads/DIS/SolarCompanyWebsite/Views/Home/ServiceDetails.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9TZXJ2aWNlRGV0YWlscy5jc2h0bWw=
+[C:/Users/Dheeraj Mekala/Source/Repos/SolarCompanyWebsite/Views/Home/ServiceDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZXJ2aWNlRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/meghanayarrabothula/Downloads/DIS/SolarCompanyWebsite/Views/Home/Services.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9TZXJ2aWNlcy5jc2h0bWw=
+[C:/Users/Dheeraj Mekala/Source/Repos/SolarCompanyWebsite/Views/Home/Services.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZXJ2aWNlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/meghanayarrabothula/Downloads/DIS/SolarCompanyWebsite/Views/Location/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9jYXRpb24vSW5kZXguY3NodG1s
+[C:/Users/Dheeraj Mekala/Source/Repos/SolarCompanyWebsite/Views/Location/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYXRpb25cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/meghanayarrabothula/Downloads/DIS/SolarCompanyWebsite/Views/Location/LocationData.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9jYXRpb24vTG9jYXRpb25EYXRhLmNzaHRtbA==
+[C:/Users/Dheeraj Mekala/Source/Repos/SolarCompanyWebsite/Views/Location/LocationData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYXRpb25cTG9jYXRpb25EYXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/meghanayarrabothula/Downloads/DIS/SolarCompanyWebsite/Views/Location/SolarEstimate.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9jYXRpb24vU29sYXJFc3RpbWF0ZS5jc2h0bWw=
+[C:/Users/Dheeraj Mekala/Source/Repos/SolarCompanyWebsite/Views/Location/SolarEstimate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYXRpb25cU29sYXJFc3RpbWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/meghanayarrabothula/Downloads/DIS/SolarCompanyWebsite/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+[C:/Users/Dheeraj Mekala/Source/Repos/SolarCompanyWebsite/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/meghanayarrabothula/Downloads/DIS/SolarCompanyWebsite/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[C:/Users/Dheeraj Mekala/Source/Repos/SolarCompanyWebsite/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/meghanayarrabothula/Downloads/DIS/SolarCompanyWebsite/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[C:/Users/Dheeraj Mekala/Source/Repos/SolarCompanyWebsite/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/meghanayarrabothula/Downloads/DIS/SolarCompanyWebsite/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+[C:/Users/Dheeraj Mekala/Source/Repos/SolarCompanyWebsite/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/meghanayarrabothula/Downloads/DIS/SolarCompanyWebsite/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-atd768r6ss
+[C:/Users/Dheeraj Mekala/Source/Repos/SolarCompanyWebsite/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-cyq5bj619f
