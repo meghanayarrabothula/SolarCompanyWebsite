@@ -1,0 +1,56 @@
+﻿@model List<SolarCompanyWebsite.Models.Appointment>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Appointments</title>
+    <link rel="stylesheet" href="~/css/appointments.css">
+</head>
+<body>
+
+    <h2 class="title">Appointments</h2>
+
+    @if (!Model.Any())
+    {
+        <p class="no-appointments">No registered appointments. Please add new appointments.</p>
+    }
+    else
+    {
+        <table class="appointments-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Phone Number</th>
+                    <th>Email</th>
+                    <th>Appointment Date</th>
+                    <th>Available From</th>
+                    <th>Available Until</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var appointment in Model)
+                {
+                    <tr>
+                        <td>@appointment.Name</td>
+                        <td>@appointment.Address</td>
+                        <td>@appointment.PhoneNumber</td>
+                        <td>@appointment.Email</td>
+                        <td>@appointment.AppointmentDate.ToShortDateString()</td>
+                        <td>@appointment.AvailableFrom</td>
+                        <td>@appointment.AvailableUntil</td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@appointment.Id" class="btn edit-btn">Edit</a>
+                            <a asp-action="Delete" asp-route-id="@appointment.Id" class="btn delete-btn">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    <a asp-action="Create" class="btn add-btn">Add New Appointment</a>
+
+</body>
+</html>

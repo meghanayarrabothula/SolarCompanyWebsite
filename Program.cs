@@ -8,6 +8,7 @@ builder.Services.AddControllersWithViews();
 // Register LocationService with dependency injection
 builder.Services.AddHttpClient<LocationService>();
 builder.Services.AddHttpClient<SolarDataService>();
+builder.Services.AddSingleton<AppointmentService>();
 
 // Build the app
 var app = builder.Build();

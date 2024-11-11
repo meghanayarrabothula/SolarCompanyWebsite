@@ -1,0 +1,21 @@
+﻿@model SolarCompanyWebsite.Models.Appointment
+
+<h2>Delete Appointment</h2>
+
+<p>Are you sure you want to delete the following appointment?</p>
+
+<div>
+    <p><strong>Name:</strong> @Model.Name</p>
+    <p><strong>Address:</strong> @Model.Address</p>
+    <p><strong>Phone Number:</strong> @Model.PhoneNumber</p>
+    <p><strong>Email:</strong> @Model.Email</p>
+    <p><strong>Appointment Date:</strong> @Model.AppointmentDate.ToShortDateString()</p>
+    <p><strong>Available From:</strong> @Model.AvailableFrom</p>
+    <p><strong>Available Until:</strong> @Model.AvailableUntil</p>
+</div>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit">Confirm Delete</button>
+    <a asp-action="Index">Cancel</a>
+</form>

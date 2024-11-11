@@ -1,0 +1,55 @@
+﻿@model SolarCompanyWebsite.Models.Appointment
+
+<h2>Edit Appointment</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div>
+        <label>Name</label>
+        <input asp-for="Name" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div>
+        <label>Address</label>
+        <input asp-for="Address" />
+        <span asp-validation-for="Address" class="text-danger"></span>
+    </div>
+    <div>
+        <label>Phone Number</label>
+        <input asp-for="PhoneNumber" />
+        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+    </div>
+    <div>
+        <label>Email</label>
+        <input asp-for="Email" type="email" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div>
+        <label>Appointment Date</label>
+        <input asp-for="AppointmentDate" type="date" />
+        <span asp-validation-for="AppointmentDate" class="text-danger"></span>
+    </div>
+    <div>
+        <label>Available From</label>
+        <input asp-for="AvailableFrom" type="time" />
+        <span asp-validation-for="AvailableFrom" class="text-danger"></span>
+    </div>
+    <div>
+        <label>Available Until</label>
+        <input asp-for="AvailableUntil" type="time" />
+        <span asp-validation-for="AvailableUntil" class="text-danger"></span>
+    </div>
+    <div>
+        <label>Is Primary House</label>
+        <input asp-for="IsPrimaryHouse" type="checkbox" />
+    </div>
+    <div>
+        <label>Details</label>
+        <textarea asp-for="Details"></textarea>
+        <span asp-validation-for="Details" class="text-danger"></span>
+    </div>
+    <button type="submit">Update Appointment</button>
+</form>
+
+<a asp-action="Index">Back to List</a>
