@@ -46,6 +46,13 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+<<<<<<< HEAD
+=======
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+>>>>>>> dheeraj-temp
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"

@@ -33,16 +33,11 @@ namespace SolarCompanyWebsite.Controllers
             // Get coordinates from the Geocoding API
             var coordinates = await _locationService.GetCoordinates(address);
 
-            // Get solar data based on coordinates from the Solar API
-            var solarData = await _locationService.GetSolarData(coordinates.lat, coordinates.lng);
 
-            // Pass data to the view
-            ViewBag.Address = address;
-            ViewBag.Latitude = coordinates.lat;
-            ViewBag.Longitude = coordinates.lng;
-            ViewBag.SolarData = solarData;
 
-            return View("LocationData");
+            // Redirect to SolarDataController to fetch and display solar data
+            return RedirectToAction("GetSolarData", "SolarData", new { latitude = coordinates.lat, longitude = coordinates.lng, address });
+
         }
         public IActionResult SolarEstimate()
         {
