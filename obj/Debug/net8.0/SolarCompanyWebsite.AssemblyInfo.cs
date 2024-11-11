@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SolarCompanyWebsite")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9fc6b2478f2a65383b45f323ec02755dc4e34313")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+44ef112a21399dcb2053e76a7f35843b3cdf6021")]
 [assembly: System.Reflection.AssemblyProductAttribute("SolarCompanyWebsite")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SolarCompanyWebsite")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
