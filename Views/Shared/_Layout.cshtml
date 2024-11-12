@@ -3,29 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewData["Title"] - Solar Company</title>
-    <link rel="stylesheet" href="~/css/styles.css">
-    <script src="~/js/scripts.js" defer></script>
+    <title>@ViewData["Title"] - Solar Solutions</title>
+    <link rel="stylesheet" href="~/css/styles.css" />
 </head>
 <body>
+    <!-- Header Section with Navigation Links -->
     <header>
-        <div class="logo">Solar Solutions</div>
+        <h1>Solar Solutions</h1>
         <nav>
-            <a href="/">Home</a>
-            <a href="/Home/About">About</a>
-            <a href="/Home/Services">Services</a>
-            <a href="/Location/SolarEstimate">Solar Estimate</a> <!-- New link -->
-            <a href="/Home/Contact">Contact</a>
-            <a href="/Feedback">Feedback</a>
+            <a href="~/Home/Index">Home</a>
+            <a href="~/Home/About">About Us</a>
+            <a href="~/Location/SolarEstimate">Solar Estimate</a>
+            <a href="~/Home/Analytics">Estimate Analytics</a>
+            <a href="~/Home/Contact">Feedback</a>
         </nav>
     </header>
 
+    <!-- Main Content Section -->
     <main>
-        @RenderBody()
+        @RenderBody() <!-- The content of each view will be injected here -->
     </main>
 
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2023 Solar Solutions. All rights reserved.</p>
+        <p>&copy; @DateTime.Now.Year Solar Solutions. All rights reserved.</p>
     </footer>
+
+    <!-- Additional Scripts (if needed for specific page functionality) -->
+    @RenderSection("Scripts", required: false)
 </body>
 </html>

@@ -1,18 +1,58 @@
 @{
     ViewData["Title"] = "Contact Us";
 }
-<section class="contact-section">
-    <h2>Contact Us</h2>
-    <form>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+        <section class="contact-section">
 
-        <button type="submit">Send Message</button>
-    </form>
-</section>
+            <form id="feedbackForm" class="feedback-form">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="button" id="submitFeedback" class="submit-btn">Submit</button>
+            </form>
+
+            <section id="feedbackDisplay" class="feedback-display">
+                <h2>Feedback Received</h2>
+                <ul id="feedbackList">
+                    <!-- User feedback will display here -->
+                </ul>
+            </section>
+        </section>
+
+
+    <script>
+        document.getElementById("submitFeedback").addEventListener("click", function() {
+            const firstName = document.getElementById("firstName").value.trim();
+            const lastName = document.getElementById("lastName").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const message = document.getElementById("message").value.trim();
+
+            if (firstName && lastName && email && message) {
+                const feedbackList = document.getElementById("feedbackList");
+                const feedbackItem = document.createElement("li");
+                feedbackItem.innerHTML = `<strong>${firstName} ${lastName}</strong> (${email}):<br>${message}`;
+                
+                // Add the new feedback item to the feedback list
+                feedbackList.appendChild(feedbackItem);
+
+                // Clear the form fields
+                document.getElementById("feedbackForm").reset();
+            } else {
+                alert("Please fill out all fields.");
+            }
+        });
+    </script>
+
+
+
+
