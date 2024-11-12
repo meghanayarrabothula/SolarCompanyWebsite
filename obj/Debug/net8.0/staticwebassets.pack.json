@@ -1,283 +1,283 @@
 {
   "Files": [
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/obj/Debug/net8.0/scopedcss/projectbundle/SolarCompanyWebsite.bundle.scp.css",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/obj/Debug/net8.0/scopedcss/projectbundle/SolarCompanyWebsite.bundle.scp.css",
       "PackagePath": "staticwebassets/SolarCompanyWebsite.bundle.scp.css"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/css/site.css",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/css/styles.css",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/css/styles.css",
       "PackagePath": "staticwebassets/css/styles.css"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/favicon.ico",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/images/Abhi.jpg",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/images/Abhi.jpg",
       "PackagePath": "staticwebassets/images/Abhi.jpg"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/images/Dheeraj.jpeg",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/images/Dheeraj.jpeg",
       "PackagePath": "staticwebassets/images/Dheeraj.jpeg"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/images/Meghana.jpeg",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/images/Meghana.jpeg",
       "PackagePath": "staticwebassets/images/Meghana.jpeg"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/images/Sunil.jpeg",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/images/Sunil.jpeg",
       "PackagePath": "staticwebassets/images/Sunil.jpeg"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/images/background.jpg",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/images/background.jpg",
       "PackagePath": "staticwebassets/images/background.jpg"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/images/data model.jpg",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/images/data model.jpg",
       "PackagePath": "staticwebassets/images/data model.jpg"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/js/scripts.js",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/js/scripts.js",
       "PackagePath": "staticwebassets/js/scripts.js"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/js/site.js",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/js/solarEstimate.js",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/js/solarEstimate.js",
       "PackagePath": "staticwebassets/js/solarEstimate.js"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/LICENSE",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/LICENSE",
       "PackagePath": "staticwebassets/lib/bootstrap"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
       "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/jquery-validation/LICENSE.md",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/jquery-validation/LICENSE.md",
       "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/jquery-validation/dist/additional-methods.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/jquery/LICENSE.txt",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/jquery/LICENSE.txt",
       "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/jquery/dist/jquery.js",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/jquery/dist/jquery.js",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/jquery/dist/jquery.min.js",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/jquery/dist/jquery.min.js",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
     },
     {
-      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/wwwroot/lib/jquery/dist/jquery.min.map",
+      "Id": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/wwwroot/lib/jquery/dist/jquery.min.map",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
     },
     {

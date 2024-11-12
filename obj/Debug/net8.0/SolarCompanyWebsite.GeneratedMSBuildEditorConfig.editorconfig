@@ -17,95 +17,95 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SolarCompanyWebsite
 build_property.RootNamespace = SolarCompanyWebsite
-build_property.ProjectDir = /Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/
+build_property.ProjectDir = /Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite
+build_property.MSBuildProjectDirectory = /Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/Views/Appointments/Create.cshtml]
+[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/Views/Appointments/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwb2ludG1lbnRzL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/Views/Appointments/Delete.cshtml]
+[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/Views/Appointments/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwb2ludG1lbnRzL0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/Views/Appointments/Edit.cshtml]
+[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/Views/Appointments/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwb2ludG1lbnRzL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/Views/Appointments/Index.cshtml]
+[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/Views/Appointments/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwb2ludG1lbnRzL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/Views/Feedback/AddFeedback.cshtml]
+[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/Views/Feedback/AddFeedback.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmVlZGJhY2svQWRkRmVlZGJhY2suY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/Views/Feedback/Index.cshtml]
+[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/Views/Feedback/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmVlZGJhY2svSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/Views/Home/About.cshtml]
+[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/Views/Home/Contact.cshtml]
+[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/Views/Home/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Db250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/Views/Home/Index.cshtml]
+[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/Views/Home/Privacy.cshtml]
+[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/Views/Home/ServiceDetails.cshtml]
+[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/Views/Home/ServiceDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9TZXJ2aWNlRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/Views/Home/Services.cshtml]
+[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/Views/Home/Services.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9TZXJ2aWNlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/Views/Location/Index.cshtml]
+[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/Views/Location/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9jYXRpb24vSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/Views/Location/LocationData.cshtml]
+[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/Views/Location/LocationData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9jYXRpb24vTG9jYXRpb25EYXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/Views/Location/SolarEstimate.cshtml]
+[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/Views/Location/SolarEstimate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9jYXRpb24vU29sYXJFc3RpbWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/Views/Shared/Error.cshtml]
+[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/Views/SolarData/SolarData.cshtml]
+[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/Views/SolarData/SolarData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU29sYXJEYXRhL1NvbGFyRGF0YS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/Views/_ViewImports.cshtml]
+[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/Views/_ViewStart.cshtml]
+[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/Views/Shared/_Layout.cshtml]
+[/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-atd768r6ss

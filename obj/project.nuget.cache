@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "70uV/mh5yec=",
+  "dgSpecHash": "xST22MffX1I=",
   "success": true,
-  "projectFilePath": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite/SolarCompanyWebsite.csproj",
+  "projectFilePath": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/SolarCompanyWebsite.csproj",
   "expectedPackageFiles": [
     "/Users/abhinav_aaduru/.nuget/packages/humanizer/2.14.1/humanizer.2.14.1.nupkg.sha512",
     "/Users/abhinav_aaduru/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
