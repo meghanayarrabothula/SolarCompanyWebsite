@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/meghanayarrabothula/Downloads/DIS/Project/DIS-Assignment-4/SolarCompanyWebsite/SolarCompanyWebsite.csproj": {}
+    "/Users/meghanayarrabothula/Downloads/DIS/Project/DIS-Assignment-4/SolarCompanyWebsite-1/SolarCompanyWebsite.csproj": {}
   },
   "projects": {
-    "/Users/meghanayarrabothula/Downloads/DIS/Project/DIS-Assignment-4/SolarCompanyWebsite/SolarCompanyWebsite.csproj": {
+    "/Users/meghanayarrabothula/Downloads/DIS/Project/DIS-Assignment-4/SolarCompanyWebsite-1/SolarCompanyWebsite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/meghanayarrabothula/Downloads/DIS/Project/DIS-Assignment-4/SolarCompanyWebsite/SolarCompanyWebsite.csproj",
+        "projectUniqueName": "/Users/meghanayarrabothula/Downloads/DIS/Project/DIS-Assignment-4/SolarCompanyWebsite-1/SolarCompanyWebsite.csproj",
         "projectName": "SolarCompanyWebsite",
-        "projectPath": "/Users/meghanayarrabothula/Downloads/DIS/Project/DIS-Assignment-4/SolarCompanyWebsite/SolarCompanyWebsite.csproj",
+        "projectPath": "/Users/meghanayarrabothula/Downloads/DIS/Project/DIS-Assignment-4/SolarCompanyWebsite-1/SolarCompanyWebsite.csproj",
         "packagesPath": "/Users/meghanayarrabothula/.nuget/packages/",
-        "outputPath": "/Users/meghanayarrabothula/Downloads/DIS/Project/DIS-Assignment-4/SolarCompanyWebsite/obj/",
+        "outputPath": "/Users/meghanayarrabothula/Downloads/DIS/Project/DIS-Assignment-4/SolarCompanyWebsite-1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/meghanayarrabothula/.nuget/NuGet/NuGet.Config"
