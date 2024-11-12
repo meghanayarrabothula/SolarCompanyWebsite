@@ -6,11 +6,12 @@
     font-family: Arial, sans-serif;
 }
 
-html, body,main {
+html, body, main {
     height: 100%;
     display: flex;
     flex-direction: column;
 }
+
 /* Body Styling */
 body {
     background-image: url('../images/background.jpg');
@@ -57,19 +58,20 @@ header nav a:hover {
 
 /* Main Banner Styling */
 .banner {
-    height: 60vh;
+    height: 50vh; /* Reduced height */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-bottom: 1rem; /* Reduced bottom margin */
 }
 
 .banner h2 {
     background-color: rgba(255, 255, 255, 0.8);
     color: #004f73;
-    padding: 20px 30px;
+    padding: 15px 20px;
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 2.5rem; /* Increased font size */
 }
 
 /* Section Styling */
@@ -83,7 +85,7 @@ section {
 }
 
 .services-section {
-    padding: 2rem;
+    padding: 1.5rem; /* Reduced padding */
     max-width: 1200px;
     margin: auto;
     background-color: transparent;
@@ -91,8 +93,8 @@ section {
 }
 
 .services-section h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
+    font-size: 2.2rem; /* Adjusted font size */
+    margin-bottom: 1rem;
     color: #004f73;
     display: inline-block;
     padding: 5px 15px;
@@ -335,6 +337,8 @@ footer {
         font-size: 12px;
     }
 }
+
+/* Contact Section */
 .contact-section {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 2rem;
@@ -423,4 +427,3 @@ footer {
     color: #004f73;
 }
 
-/* Footer Styling */
