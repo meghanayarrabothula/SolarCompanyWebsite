@@ -1,6 +1,7 @@
 ﻿@{
     ViewBag.Title = "Solar Data Estimate";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.CustomFooter = false; // Activates the custom footer in the layout
 }
 
 <h2>Solar Data Estimate</h2>
@@ -16,7 +17,6 @@
 
     <!-- Slider for selecting index -->
     <input type="range" id="indexSlider" min="0" max="@ViewBag.SolarData.financialAnalyses.Length - 1" value="0" oninput="updateCharts(this.value)">
-    <p>Selected Index: <span id="selectedIndex">0</span></p>
     <p>Monthly Bill Units: <span id="monthlyBillUnits">@ViewBag.SolarData.financialAnalyses[0].monthlyBill.units</span></p>
 
     <!-- 1. Cumulative Savings Comparison (Bar Chart) -->
@@ -45,7 +45,7 @@
 
 <script>
     function updateCharts(index) {
-        document.getElementById('selectedIndex').textContent = index;
+        document.getElementById('monthlyBillUnits').textContent = index;
         const financialAnalysis = @Html.Raw(Json.Serialize(ViewBag.SolarData.financialAnalyses));
         const selectedData = financialAnalysis[index];
 
@@ -171,9 +171,13 @@
 </script>
 
 <style>
+    main{
+        flex: 1;
+    }
     canvas {
         max-width: 600px;
         margin: 20px auto;
+        background-color: white;
     }
 
     h2, h3 {
@@ -203,6 +207,45 @@
     .btn:hover {
         background-color: #0056b3;
     }
+
+    .site-footer {
+        background-color: rgba(0, 79, 115, 0.8);
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+        font-size: 14px;
+        width: 100%;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+    }
+    
+    html, body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    .content {
+        flex-grow: 1;
+    }
+
 </style>
 
+<div class="container">
+    <div class="content">
+        <!-- Page-specific content goes here -->
+    </div>
+    <footer class="site-footer">
+        <p>&copy; @DateTime.Now.Year Solar Solutions. All rights reserved.</p>
+    </footer>
+</div>
 

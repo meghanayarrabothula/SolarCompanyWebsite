@@ -24,10 +24,28 @@
         @RenderBody() <!-- The content of each view will be injected here -->
     </main>
 
-    <!-- Footer Section -->
+    <!-- Footer Section 
     <footer>
         <p>&copy; @DateTime.Now.Year Solar Solutions. All rights reserved.</p>
-    </footer>
+    </footer> -->
+
+    @if (ViewBag.CustomFooter == true)
+    {
+        <!-- Custom footer for specific pages -->
+        <footer class="custom-footer">
+            © Your Company - Custom Footer for Solar Data Estimate
+        </footer>
+    }
+    else if (ViewBag.CustomFooter != false) // Skip footer if CustomFooter is explicitly set to false
+
+    {
+        <!-- Default footer -->
+        <footer class="site-footer">
+            <p>&copy; @DateTime.Now.Year Solar Solutions. All rights reserved.</p>
+        </footer>
+    }
+
+ 
 
     <!-- Additional Scripts (if needed for specific page functionality) -->
     @RenderSection("Scripts", required: false)
