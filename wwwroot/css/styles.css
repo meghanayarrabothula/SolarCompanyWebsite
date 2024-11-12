@@ -1,136 +1,271 @@
-/* General reset */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
     font-family: Arial, sans-serif;
-    background: url('/images/background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #444;
 }
 
-/* Header */
-header {
-    background-color: #2d5f7a;
-    color: #fff;
-    padding: 1rem 0;
+html, body,main {
+    height: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+}
+/* Body Styling */
+body {
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+    font-family: Arial, sans-serif;
+    position: relative;
 }
 
-header .logo {
+/* Header Styling */
+header {
+    background-color: #004f73;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
     font-size: 1.8rem;
-    font-weight: bold;
-    padding-left: 1rem;
+    margin-left: 1rem;
 }
 
 header nav {
     display: flex;
     gap: 1rem;
-    padding-right: 1rem;
+    margin-right: 1rem;
 }
 
 header nav a {
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-size: 1rem;
+    padding: 0.5rem;
     transition: color 0.3s;
 }
 
 header nav a:hover {
-    color: #ffde59;
+    color: #ffbb33;
 }
 
-/* Main Content */
-main {
+/* Main Banner Styling */
+.banner {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner h2 {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #004f73;
+    padding: 20px 30px;
+    border-radius: 8px;
+    font-size: 24px;
+}
+
+/* Section Styling */
+section {
     padding: 2rem 1rem;
-    color: #333;
-}
-
-.home-section, .about-section, .contact-section, .feedback-section, .add-feedback-section {
     max-width: 800px;
     margin: 2rem auto;
-    padding: 1.5rem;
-    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.services-section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    background-color: transparent;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #004f73;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 8px;
+    background: whitesmoke;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.service {
+    flex: 1 1 45%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Form Styling */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button Styling */
+button, .btn {
+    display: inline-block;
+    background-color: #004f73;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover, .btn:hover {
+    background-color: #ffbb33;
+    color: #004f73;
+}
+
+main {
+    flex: 1;
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgba(0, 79, 115, 0.8);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+/* About Us Page Styling */
+.about-section {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #004f73;
+}
+
+/* Team Container */
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.team-member {
+    flex: 1 1 250px;
+    max-width: 250px;
+    padding: 20px;
+    background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-h2 {
-    color: #2d5f7a;
+.team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 1rem;
+.team-member h3 {
+    font-size: 18px;
+    margin-top: 15px;
+    color: #004f73;
 }
 
-li {
-    background: #e3f2fd;
-    padding: 1rem;
-    margin: 0.5rem 0;
-    border-radius: 5px;
+.team-member p {
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
 }
 
-/* Buttons */
-.btn {
+/* Data Model Section */
+.data-model {
+    margin-top: 40px;
+}
+
+.data-model h3 {
+    font-size: 24px;
+    color: #004f73;
+    margin-bottom: 15px;
+}
+
+.data-model img {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+/* GitHub Link Styling */
+.github-link {
+    margin-top: 20px;
+}
+
+.github-link a {
     display: inline-block;
-    background-color: #2d5f7a;
-    color: #fff;
-    padding: 0.7rem 1.5rem;
-    margin-top: 1rem;
+    background-color: whitesmoke;
+    color: #004f73;
+    padding: 10px 20px;
+    border-radius: 4px;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
-
-.btn:hover {
-    background-color: #ffde59;
-    color: #2d5f7a;
-}
-
-button, input, textarea {
-    border-radius: 5px;
-    padding: 0.5rem;
-}
-
-form button {
-    width: 100%;
-    background-color: #2d5f7a;
-    color: #fff;
-    border: none;
-    padding: 0.7rem;
-    font-size: 1rem;
-    margin-top: 1rem;
-    transition: background 0.3s;
-}
-
-form button:hover {
-    background-color: #ffde59;
-    color: #2d5f7a;
-}
-
-.success-message {
-    color: #4caf50;
+    font-size: 16px;
     font-weight: bold;
-    margin-top: 1rem;
+    transition: background-color 0.3s;
 }
 
-/* Footer */
-footer {
-    background-color: #2d5f7a;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+.github-link a:hover {
+    background-color: grey;
 }
 
 /* Responsive Design */
@@ -140,102 +275,152 @@ footer {
         gap: 0.5rem;
     }
 
-    header .logo {
-        padding-left: 0;
+    .banner h2 {
+        font-size: 20px;
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        max-width: 90%;
+    }
+
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        max-width: 90%;
+    }
+
+    .data-model img {
+        width: 90%;
     }
 }
 
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
 
-/* Services Section Styling */
-.services-section {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 1.5rem;
-    background-color: rgba(255, 255, 255, 0.9); /* Similar to About Us */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
+    .banner h2 {
+        font-size: 18px;
+        padding: 15px 20px;
+    }
 
-.services-section h2 {
-    color: #2d5f7a;
-}
+    .services-section h2 {
+        font-size: 24px;
+    }
 
-.services-section p {
-    color: #555;
-    margin-bottom: 1.5rem;
-}
+    .services-container, .team-container {
+        flex-direction: column;
+        gap: 15px;
+    }
 
-/* Individual Service Items Styling */
-.service-items {
-    display: grid;
-    gap: 1.5rem;
-}
+    .service, .team-member {
+        max-width: 100%;
+        padding: 15px;
+    }
 
-.service-item {
-    background-color: #e3f2fd;
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: left;
-}
+    .team-member img {
+        width: 100px;
+        height: 100px;
+    }
 
-.service-item h3 a {
-    color: #2d5f7a;
-    font-size: 1.2rem;
-    text-decoration: none;
-    font-weight: bold;
+    footer {
+        font-size: 12px;
+    }
 }
-
-.service-item h3 a:hover {
-    color: #ffde59;
-}
-
-.service-item p {
-    color: #555;
-    margin: 0.5rem 0 0;
-}
-/* Solar Estimate Section Styling */
-.solar-estimate-section {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 1.5rem;
+.contact-section {
     background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
+    padding: 2rem;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
     text-align: center;
 }
 
-.solar-estimate-section h2 {
-    color: #2d5f7a;
-    margin-bottom: 1.5rem;
-}
-
-.solar-estimate-section form {
+/* Form Styling */
+.feedback-form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    margin-bottom: 2rem;
 }
 
-.solar-estimate-section input[type="text"] {
-    padding: 0.7rem;
+.feedback-form label {
+    font-weight: bold;
+    color: #004f73;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.feedback-form input, .feedback-form textarea {
+    width: 100%;
+    padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 4px;
+    font-size: 1rem;
 }
 
-.solar-estimate-section button {
+.feedback-form input:focus, .feedback-form textarea:focus {
+    border-color: #004f73;
+    outline: none;
+}
+
+/* Button Styling */
+.submit-btn {
+    background-color: #004f73;
+    color: white;
     padding: 0.7rem;
-    background-color: #2d5f7a;
-    color: #fff;
-    border: none;
     border-radius: 5px;
-    cursor: pointer;
+    border: none;
     font-size: 1rem;
+    cursor: pointer;
     transition: background 0.3s;
 }
 
-.solar-estimate-section button:hover {
-    background-color: #ffde59;
-    color: #2d5f7a;
+.submit-btn:hover {
+    background-color: #ffbb33;
+    color: #004f73;
 }
 
+/* Feedback Display Styling */
+.feedback-display {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-display h2 {
+    color: #004f73;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#feedbackList {
+    list-style: none;
+    padding: 0;
+}
+
+#feedbackList li {
+    background-color: #e3f2fd;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    color: #333;
+}
+
+#feedbackList li strong {
+    color: #004f73;
+}
+
+/* Footer Styling */

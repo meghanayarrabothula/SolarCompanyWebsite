@@ -1,5 +1,23 @@
 ﻿@{
-    ViewData["Title"] = "Home";
+    ViewData["Title"] = "Home | Solar Solutions";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<section class="home-section">
-    <h2>Welcome to Tampa's Premier Solar
+
+<main class="banner">
+    <h2>Welcome to Tampa's Premier Solar</h2>
+</main>
+
+<!-- Services Section with Two-Column Layout -->
+<section class="services-section">
+    <h2>Our Services</h2>
+    <div class="services-container">
+        @foreach (var service in ViewBag.Services)
+        {
+            <div class="service">
+                <h3>@service.Title</h3>
+                <p>@service.Description</p>
+            </div>
+        }
+    </div>
+</section>
+
