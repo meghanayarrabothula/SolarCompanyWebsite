@@ -45,26 +45,30 @@
     
     <!-- Technical Details Section -->
     <div class="technical-details">
-        <h3>Technical Details</h3>
-        <p>
-            Our solar lead generation project leverages advanced data from Google’s Solar and Geocode APIs to provide highly accurate, location-based solar energy assessments. Here’s a breakdown of the technology and processes we used:
-Precise Location Mapping
-Address to Latitude/Longitude Conversion: Since Google’s Solar API requires latitude and longitude as input, we integrated Google’s Geocode API. This converts an address into precise latitude and longitude coordinates, which are then fed into the Solar API to locate nearby buildings.
-Building Identification: For accurate analysis, the Solar API identifies the nearest building’s coordinates to ensure the data reflects the right property. As latitude and longitude must be very precise, the Solar API uses image recognition to pinpoint the exact building center, which sometimes differs slightly from the initial Geocode coordinates.
-Satellite-Based Solar Data Collection
-Image Recognition and Analysis: The Solar API’s image recognition technology analyzes satellite images of buildings and other structures over time. By reviewing images from different times of day, seasons, and years, the Solar API assesses sunlight exposure on each rooftop, creating precise solar predictions that traditional methods cannot match.
-Optimized Roof Utilization: Our system provides insights on optimal solar panel placement. Instead of covering an entire roof, it identifies well-lit roof areas over time, optimizing solar panel placement to maximize efficiency and cost savings.
-Visual Insights and Savings Reports
-Customizable Graphs and Comparisons: Based on Solar API data, we generate various graphs for users:
-Savings by Payment Option: Options include leasing, cash purchase, or financing. Each graph reflects potential savings, factoring in federal and local incentives for realistic cost projections.
-Environmental Impact: A comparison of carbon footprint reduction with and without solar for eco-conscious customers.
-Utility Bill Comparison: An overview of total utility bill savings across the solar panel’s lifespan, helping customers make informed decisions.
-Future Development - Partial Roof Analysis: We aim to expand functionality, allowing users to overlay solar panel patches on the most sunlit roof areas. This feature will support users interested in smaller, budget-friendly solar setups or trial installations.
-Enhanced Appointment System
-Flexible Consultation Scheduling: Customers can schedule multiple consultation appointments based on availability. Confirmed appointments trigger a notification to keep customers updated, ensuring an organized experience.
-Our platform integrates state-of-the-art satellite data and visual insights, empowering users to make confident solar energy investment decisions while streamlining the solar consultation process
-        </p>
-    </div>
+    <h3>Technical Details</h3>
+    <ul>
+        <li>
+            <strong>Precise Location Mapping:</strong> 
+            Utilizes Google’s Geocode API to convert addresses into latitude/longitude coordinates for accurate building location. 
+            Google’s Solar API then uses image recognition to identify the exact center of the building for precise solar assessment.
+        </li>
+        <li>
+            <strong>Satellite-Based Solar Data Collection:</strong> 
+            Employs image recognition to analyze sunlight exposure on rooftops over different times and seasons. 
+            Provides optimized recommendations for solar panel placement, focusing on the most well-lit areas for efficiency.
+        </li>
+        <li>
+            <strong>Visual Insights and Savings Reports:</strong> 
+            Generates customizable graphs showing savings by payment options, environmental impact, and utility bill comparisons 
+            to assist customers in decision-making.
+        </li>
+        <li>
+            <strong>Enhanced Appointment System:</strong> 
+            Offers flexible consultation scheduling with automated notifications, streamlining the solar consultation process for 
+            an organized user experience.
+        </li>
+    </ul>
+</div>
 
     <!-- Commit Log Images Section -->
     <div class="commit-log-images">
@@ -88,7 +92,7 @@ Our platform integrates state-of-the-art satellite data and visual insights, emp
 
 <style>
 
-        .site-footer {
+        @* .site-footer {
                  background-color: rgba(0, 79, 115, 0.8);
     color: white;
     padding: 10px 0;
@@ -97,7 +101,20 @@ Our platform integrates state-of-the-art satellite data and visual insights, emp
     width: 100%;
     position: relative;
     z-index: 10;
-            }
+            } *@
+    .site-footer {
+        background-color: rgba(0, 79, 115, 0.8);
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+        font-size: 14px;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+    }
             
             html, body {
                 height: 100%;
