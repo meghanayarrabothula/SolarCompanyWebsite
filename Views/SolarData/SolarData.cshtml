@@ -1,183 +1,290 @@
 ﻿@{
     ViewBag.Title = "Solar Data Estimate";
     Layout = "~/Views/Shared/_Layout.cshtml";
-    ViewBag.CustomFooter = false; // Activates the custom footer in the layout
+    ViewBag.CustomFooter = false;
+
 }
 
-<h2>Solar Data Estimate</h2>
-<p><strong>Address:</strong> @ViewBag.Address</p>
-<p><strong>Latitude:</strong> @ViewBag.Latitude</p>
-<p><strong>Longitude:</strong> @ViewBag.Longitude</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Header Section -->
+    <div class="max-w-7xl mx-auto p-6">
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
+            <h1 class="text-3xl font-bold text-gray-800 mb-6 text-blue-900">Solar Estimate Dashboard</h1>
+            
+            <!-- Property Information Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-blue-50 rounded-lg p-4 flex items-center space-x-4">
+                    <div class="bg-blue-100 p-3 rounded-full">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-medium text-gray-500">Property Address</h3>
+                        <p class="text-lg font-semibold text-gray-800">@ViewBag.Address</p>
+                    </div>
+                </div>
+                
+                <div class="bg-green-50 rounded-lg p-4 flex items-center space-x-4">
+                    <div class="bg-green-100 p-3 rounded-full">
+                        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-medium text-gray-500">Location</h3>
+                        <p class="text-lg font-semibold text-gray-800">@ViewBag.Latitude, @ViewBag.Longitude</p>
+                    </div>
+                </div>                
+            </div>
+        </div>
 
-<!-- Load Chart.js from CDN -->
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <!-- Analysis Controls -->
+        <div class="bg-white rounded-xl shadow-lg p-2 mb-4">
+            <div class="max-w-2xl mx-auto">
+                <h3 class="text-3xl font-semibold text-gray-700 mb-4">Analysis Configuration</h3>
+                <div class="space-y-4">
+                    <label class="block text-xl font-medium text-gray-600">Scenario Selection</label>
+                    <input type="range" id="indexSlider" 
+                           class="w-full h-2 bg-blue-200 rounded-lg appearance-none cursor-pointer accent-blue-600"
+                           min="6" 
+                           max="@(ViewBag.SolarData.financialAnalyses.Length - 1)" 
+                           value="6"  oninput="updateCharts(this.value)">
+                    <div class="flex justify-center text-sm text-gray-600">
+                        <span><span id="selectedIndex"></span></span>
+                        <span class="text-2xl">Monthly Bill Units : <span id="monthlyBillUnits">-</span> @{
+            // Get the units as a string
+            var units = ViewBag.SolarData.financialAnalyses[0].monthlyBill.units;
 
-<div>
-    <h3>Visualized Solar Potential Data</h3>
+            // If the units string ends with "20", remove the last two characters
+            if (units.EndsWith("20"))
+            {
+                units = units.Substring(0, units.Length - 2);
+            }
+        }
+        @units</span>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <!-- Slider for selecting index -->
-    <input type="range" id="indexSlider" min="0" max="@ViewBag.SolarData.financialAnalyses.Length - 1" value="0" oninput="updateCharts(this.value)">
-    <p>Monthly Bill Units: <span id="monthlyBillUnits">@ViewBag.SolarData.financialAnalyses[0].monthlyBill.units</span></p>
+        <!-- Charts Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Savings Comparison -->
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h3 class="text-lg font-semibold text-gray-700 mb-4">Cumulative Savings</h3>
+                <canvas id="cumulativeSavingsChart"></canvas>
+            </div>
 
-    <!-- 1. Cumulative Savings Comparison (Bar Chart) -->
-    <canvas id="cumulativeSavingsChart"></canvas>
+            <!-- Cost Breakdown -->
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h3 class="text-lg font-semibold text-gray-700 mb-4">Upfront Cost Breakdown</h3>
+                <canvas id="upfrontCostChart"></canvas>
+            </div>
 
-    <!-- 2. Cash upfront Cost Breakdown with Incentives (Stacked Bar Chart) -->
-    <canvas id="upfrontCostChart"></canvas>
+            <!-- Bill Comparison -->
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h3 class="text-lg font-semibold text-gray-700 mb-4">Lifetime Bill Comparison</h3>
+                <canvas id="billComparisonChart"></canvas>
+            </div>
 
-    <!-- 3. Bill Comparison Lifetime with and without Solar (Bar Chart) -->
-    <canvas id="billComparisonChart"></canvas>
+            <!-- Environmental Impact -->
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h3 class="text-lg font-semibold text-gray-700 mb-4">Environmental Impact</h3>
+                <canvas id="co2OffsetChart"></canvas>
+            </div>
 
-    <!-- 6. Environmental Impact - CO₂ Offset (Pie Chart) -->
-    <canvas id="co2OffsetChart"></canvas>
+            <!-- Roof Area -->
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h3 class="text-lg font-semibold text-gray-700 mb-4">Roof Area Utilization</h3>
+                <canvas id="roofAreaChart"></canvas>
+            </div>
 
-    <!-- 7. Roof Usable Area vs. Maximum Array Area (Bar Chart) -->
-    <canvas id="roofAreaChart"></canvas>
+            <!-- Purchase Options -->
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h3 class="text-lg font-semibold text-gray-700 mb-4">Purchase Options Comparison</h3>
+                <canvas id="purchaseOptionsChart"></canvas>
+            </div>
+        </div>
 
-    <!-- 8. Leasing vs. Cash Purchase vs. Financed Purchase Costs (Bar Chart) -->
-    <canvas id="purchaseOptionsChart"></canvas>
-
-    <!-- Button to book a personal consultation appointment -->
-    <div style="margin-top: 20px;">
-        <a href="/appointments/index" class="btn btn-primary">Book a Personal Consultation Appointment</a>
+        <!-- CTA Section -->
+        <div class="mt-8 text-center">
+            <a href="/appointments/index" 
+               class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                </svg>
+                Book a Personal Consultation
+            </a>
+        </div>
     </div>
-</div>
+
+
 
 <script>
+    
     function updateCharts(index) {
-        document.getElementById('monthlyBillUnits').textContent = index;
-        const financialAnalysis = @Html.Raw(Json.Serialize(ViewBag.SolarData.financialAnalyses));
-        const selectedData = financialAnalysis[index];
+    
+    const financialAnalysis = @Html.Raw(Json.Serialize(ViewBag.SolarData.financialAnalyses));
+    const selectedData = financialAnalysis[index];
 
-        // Update monthly bill units display
-        document.getElementById('monthlyBillUnits').textContent = selectedData.monthlyBill.units;
+    console.log("all_data", financialAnalysis);
+    console.log("selected", selectedData);
 
-        // 1. Cumulative Savings Comparison (Bar Chart)
-        cumulativeSavingsChart.data.datasets[0].data = [
-            selectedData.leasingSavings.savings.savingsYear1.units,
-            selectedData.leasingSavings.savings.savingsYear20.units,
-            selectedData.cashPurchaseSavings.savings.savingsYear1.units,
-            selectedData.cashPurchaseSavings.savings.savingsYear20.units,
-            selectedData.financedPurchaseSavings.savings.savingsYear1.units,
-            selectedData.financedPurchaseSavings.savings.savingsYear20.units
-        ];
-        cumulativeSavingsChart.update();
+    // Handle missing data gracefully (check if the data is valid)
+    const getValidData = (data, defaultValue = 0) => {
+        // If data is valid and not NaN, return the data, otherwise return the default value
+        return (data !== null && data !== undefined && !isNaN(data)) ? data : defaultValue;
+    };
 
-        // 2. Upfront Cost Breakdown with Incentives (Stacked Bar Chart)
-        upfrontCostChart.data.datasets[0].data = [
-            selectedData.financialDetails.federalIncentive.units,
-            selectedData.cashPurchaseSavings.rebateValue.units,
-            selectedData.cashPurchaseSavings.outOfPocketCost.units,
-            selectedData.cashPurchaseSavings.upfrontCost.units
-        ];
-        upfrontCostChart.update();
+    // Update monthly bill units display
+    document.getElementById('monthlyBillUnits').textContent = getValidData(selectedData.monthlyBill?.units, 0);
 
-        // 3. Bill Comparison Lifetime with and without Solar (Bar Chart)
-        billComparisonChart.data.datasets[0].data = [
-            selectedData.financialDetails.costOfElectricityWithoutSolar.units,
-            selectedData.financialDetails.remainingLifetimeUtilityBill.units
-        ];
-        billComparisonChart.update();
+    // 1. Cumulative Savings Comparison (Bar Chart)
+    cumulativeSavingsChart.data.datasets[0].data = [
+        getValidData(selectedData.leasingSavings.savings.savingsYear1.units),
+        getValidData(selectedData.leasingSavings.savings.savingsYear20.units),
+        getValidData(selectedData.cashPurchaseSavings.savings.savingsYear1.units),
+        getValidData(selectedData.cashPurchaseSavings.savings.savingsYear20.units),
+        getValidData(selectedData.financedPurchaseSavings.savings.savingsYear1.units),
+        getValidData(selectedData.financedPurchaseSavings.savings.savingsYear20.units)
+    ];
+    cumulativeSavingsChart.update();
 
-        // 6. Environmental Impact - CO₂ Offset (Pie Chart)
-        co2OffsetChart.data.datasets[0].data = [
-            @ViewBag.SolarData.carbonOffsetFactorKgPerMwh, // Assuming there's a CO₂ offset value
-            100 - @ViewBag.SolarData.carbonOffsetFactorKgPerMwh
-        ];
-        co2OffsetChart.update();
+    // 2. Upfront Cost Breakdown with Incentives (Stacked Bar Chart)
+    upfrontCostChart.data.datasets[0].data = [
+        getValidData(selectedData.financialDetails.federalIncentive.units),
+        getValidData(selectedData.cashPurchaseSavings.rebateValue.units),
+        getValidData(selectedData.cashPurchaseSavings.outOfPocketCost.units),
+        getValidData(selectedData.cashPurchaseSavings.upfrontCost.units)
+    ];
+    upfrontCostChart.update();
 
-        // 7. Roof Usable Area vs. Maximum Array Area (Bar Chart)
-        roofAreaChart.data.datasets[0].data = [
-            @ViewBag.SolarData.maxArrayAreaMeters2,
-            @ViewBag.SolarData.wholeRoofStats.areaMeters2
-        ];
-        roofAreaChart.update();
+    // 3. Bill Comparison Lifetime with and without Solar (Bar Chart)
+    billComparisonChart.data.datasets[0].data = [
+        getValidData(selectedData.financialDetails.costOfElectricityWithoutSolar.units),
+        getValidData(selectedData.financialDetails.remainingLifetimeUtilityBill.units)
+    ];
+    billComparisonChart.update();
 
-        // 8. Leasing vs. Cash Purchase vs. Financed Purchase Costs (Bar Chart)
-        purchaseOptionsChart.data.datasets[0].data = [
-            selectedData.leasingSavings.savings.savingsLifetime.units,
-            selectedData.cashPurchaseSavings.savings.savingsLifetime.units,
-            selectedData.financedPurchaseSavings.savings.savingsLifetime.units
-        ];
-        purchaseOptionsChart.update();
+    // 4. Environmental Impact - CO₂ Offset (Pie Chart)
+    const carbonOffsetValue = getValidData(@ViewBag.SolarData?.carbonOffsetFactorKgPerMwh, 0);
+    co2OffsetChart.data.datasets[0].data = [
+        carbonOffsetValue,
+        100 - carbonOffsetValue
+    ];
+    co2OffsetChart.update();
+
+    // 5. Roof Usable Area vs. Maximum Array Area (Bar Chart)
+    roofAreaChart.data.datasets[0].data = [
+        getValidData(@ViewBag.SolarData.maxArrayAreaMeters2),
+        getValidData(@ViewBag.SolarData.wholeRoofStats.areaMeters2)
+    ];
+    roofAreaChart.update();
+
+    // 6. Leasing vs. Cash Purchase vs. Financed Purchase Costs (Bar Chart)
+    purchaseOptionsChart.data.datasets[0].data = [
+        getValidData(selectedData.leasingSavings.savings.savingsLifetime.units),
+        getValidData(selectedData.cashPurchaseSavings.savings.savingsLifetime.units),
+        getValidData(selectedData.financedPurchaseSavings.savings.savingsLifetime.units)
+    ];
+    purchaseOptionsChart.update();
+}
+
+// Initialize charts
+const cumulativeSavingsChart = new Chart(document.getElementById('cumulativeSavingsChart'), {
+    type: 'bar',
+    data: {
+        labels: ['Leasing Savings Year 1', 'Leasing Savings Year 20', 'Cash Purchase Year 1', 'Cash Purchase Year 20', 'Financed Purchase Year 1', 'Financed Purchase Year 20'],
+        datasets: [{
+            label: 'Cumulative Savings Comparison',
+            data: [],
+            backgroundColor: ['#36a2eb', '#ff6384', '#4bc0c0', '#ff9f40', '#9966ff', '#c9cbcf']
+        }]
     }
+});
 
-    // Initialize charts
-    const cumulativeSavingsChart = new Chart(document.getElementById('cumulativeSavingsChart'), {
-        type: 'bar',
-        data: {
-            labels: ['Leasing Savings Year 1', 'Leasing Savings Year 20', 'Cash Purchase Year 1', 'Cash Purchase Year 20', 'Financed Purchase Year 1', 'Financed Purchase Year 20'],
-            datasets: [
-                { label: 'Cumulative Savings Comparison', data: [], backgroundColor: ['#36a2eb', '#ff6384', '#4bc0c0', '#ff9f40', '#9966ff', '#c9cbcf'] }
-            ]
-        }
-    });
+const upfrontCostChart = new Chart(document.getElementById('upfrontCostChart'), {
+    type: 'bar',
+    data: {
+        labels: ['Federal Incentive', 'Rebate Value', 'Out of Pocket Cost', 'Upfront Cost'],
+        datasets: [{
+            label: 'Upfront Cost Breakdown',
+            data: [],
+            backgroundColor: ['#36a2eb', '#ff6384', '#4bc0c0', '#ff9f40']
+        }]
+    }
+});
 
-    const upfrontCostChart = new Chart(document.getElementById('upfrontCostChart'), {
-        type: 'bar',
-        data: {
-            labels: ['Federal Incentive', 'Rebate Value', 'Out of Pocket Cost', 'Upfront Cost'],
-            datasets: [
-                { label: 'Upfront Cost Breakdown', data: [], backgroundColor: ['#36a2eb', '#ff6384', '#4bc0c0', '#ff9f40'] }
-            ]
-        }
-    });
+const billComparisonChart = new Chart(document.getElementById('billComparisonChart'), {
+    type: 'bar',
+    data: {
+        labels: ['Without Solar', 'With Solar'],
+        datasets: [{
+            label: 'Lifetime Bill Comparison',
+            data: [],
+            backgroundColor: ['#ff6384', '#36a2eb']
+        }]
+    }
+});
 
-    const billComparisonChart = new Chart(document.getElementById('billComparisonChart'), {
-        type: 'bar',
-        data: {
-            labels: ['Without Solar', 'With Solar'],
-            datasets: [
-                { label: 'Lifetime Bill Comparison', data: [], backgroundColor: ['#ff6384', '#36a2eb'] }
-            ]
-        }
-    });
+const co2OffsetChart = new Chart(document.getElementById('co2OffsetChart'), {
+    type: 'pie',
+    data: {
+        labels: ['CO₂ Offset', 'CO₂ Not Offset'],
+        datasets: [{
+            data: [60, 40],  // Placeholder values, will be updated
+            backgroundColor: ['#36a2eb', '#ff6384']
+        }]
+    }
+});
 
-    const co2OffsetChart = new Chart(document.getElementById('co2OffsetChart'), {
-        type: 'pie',
-        data: {
-            labels: ['CO₂ Offset', 'CO₂ Not Offset'],
-            datasets: [
-                {
-                    data: [60, 40], // Placeholder values, will be updated
-                    backgroundColor: ['#36a2eb', '#ff6384']
-                }
-            ]
-        }
-    });
+const roofAreaChart = new Chart(document.getElementById('roofAreaChart'), {
+    type: 'bar',
+    data: {
+        labels: ['Maximum Array Area', 'Usable Roof Area'],
+        datasets: [{
+            label: 'Roof Area Comparison',
+            data: [],
+            backgroundColor: ['#4bc0c0', '#ff9f40']
+        }]
+    }
+});
 
-    const roofAreaChart = new Chart(document.getElementById('roofAreaChart'), {
-        type: 'bar',
-        data: {
-            labels: ['Maximum Array Area', 'Usable Roof Area'],
-            datasets: [
-                { label: 'Roof Area Comparison', data: [], backgroundColor: ['#4bc0c0', '#ff9f40'] }
-            ]
-        }
-    });
+const purchaseOptionsChart = new Chart(document.getElementById('purchaseOptionsChart'), {
+    type: 'bar',
+    data: {
+        labels: ['Leasing', 'Cash Purchase', 'Financed Purchase'],
+        datasets: [{
+            label: 'Lifetime Savings Comparison',
+            data: [],
+            backgroundColor: ['#36a2eb', '#ff6384', '#4bc0c0']
+        }]
+    }
+});
 
-    const purchaseOptionsChart = new Chart(document.getElementById('purchaseOptionsChart'), {
-        type: 'bar',
-        data: {
-            labels: ['Leasing', 'Cash Purchase', 'Financed Purchase'],
-            datasets: [
-                { label: 'Lifetime Savings Comparison', data: [], backgroundColor: ['#36a2eb', '#ff6384', '#4bc0c0'] }
-            ]
-        }
-    });
+// Initialize with default index 0
+updateCharts(6);
 
-    // Initialize with default index 0
-    updateCharts(0);
 </script>
 
 <style>
-    main{
+     main{
         flex: 1;
     }
     canvas {
         max-width: 600px;
         margin: 20px auto;
-        background-color: white;
     }
 
     h2, h3 {
@@ -207,7 +314,6 @@
     .btn:hover {
         background-color: #0056b3;
     }
-
     .site-footer {
         background-color: rgba(0, 79, 115, 0.8);
         color: white;
@@ -215,8 +321,9 @@
         text-align: center;
         font-size: 14px;
         width: 100%;
-        position: relative;
+        position: fixed;
         bottom: 0;
+        right: 0;
         left: 0;
         z-index: 10;
     }
@@ -232,11 +339,14 @@
         display: flex;
         flex-direction: column;
         flex-grow: 1;
+        width: 100%;
     }
 
     .content {
         flex-grow: 1;
+        width: 100%;
     }
+
 
 </style>
 
@@ -248,4 +358,9 @@
         <p>&copy; @DateTime.Now.Year Solar Solutions. All rights reserved.</p>
     </footer>
 </div>
+
+</body>
+
+</html>
+
 

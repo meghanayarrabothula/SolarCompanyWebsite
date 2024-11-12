@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fyfAqtlc+P8=",
+  "dgSpecHash": "0LRu0/D5XqY=",
   "success": true,
-  "projectFilePath": "/Users/meghanayarrabothula/Downloads/DIS/Project/New/SolarCompanyWebsite/SolarCompanyWebsite.csproj",
+  "projectFilePath": "/Users/meghanayarrabothula/Desktop/Latest/Assignment 4/SolarCompanyWebsite/SolarCompanyWebsite.csproj",
   "expectedPackageFiles": [
     "/Users/meghanayarrabothula/.nuget/packages/humanizer/2.14.1/humanizer.2.14.1.nupkg.sha512",
     "/Users/meghanayarrabothula/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
