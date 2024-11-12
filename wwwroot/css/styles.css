@@ -194,17 +194,17 @@ footer {
     max-width: 1200px; /* Set a maximum width for larger screens */
     padding: 40px 20px;
     margin: auto;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box; /* Ensures padding doesn't add to the width */
-  }
+    
+}
   
 
 .about-section h2 {
     font-size: 32px;
     margin-bottom: 30px;
     color: #004f73;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 /* Team Container */
@@ -247,6 +247,9 @@ footer {
 /* Data Model Section */
 .data-model {
     margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .data-model h3 {
@@ -261,11 +264,17 @@ footer {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 /* GitHub Link Styling */
 .github-link {
     margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .github-link a {
@@ -278,6 +287,9 @@ footer {
     font-size: 16px;
     font-weight: bold;
     transition: background-color 0.3s;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .github-link a:hover {
@@ -441,3 +453,37 @@ footer {
     color: #004f73;
 }
 
+/* Technical Details Section Styling */
+.technical-details {
+    width: 90%; /* Set a percentage width for fluid resizing */
+    max-width: 1200px; /* Set a maximum width for larger screens */
+    padding: 40px 20px;
+    margin: auto;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.9);}
+
+/* Commit Log Images Section Styling */
+.commit-log-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 2rem auto;
+    width: 90%; /* Set a percentage width for fluid resizing */
+    max-width: 1200px; /* Set a maximum width for larger screens */
+    padding: 40px 20px;
+    margin: auto;
+    color: #004f73;
+
+}
+
+.commit-log-images img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    width: 90%; /* Set a percentage width for fluid resizing */
+    max-width: 1200px; /* Set a maximum width for larger screens */
+    padding: 40px 20px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+}
