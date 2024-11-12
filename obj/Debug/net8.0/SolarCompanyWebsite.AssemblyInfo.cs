@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SolarCompanyWebsite")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e134a35dbadeb9a6ebe16dec8d808776e6ea8515")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+74eab5785277b9b3e6989478a5de769cf4a4e565")]
 [assembly: System.Reflection.AssemblyProductAttribute("SolarCompanyWebsite")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SolarCompanyWebsite")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
