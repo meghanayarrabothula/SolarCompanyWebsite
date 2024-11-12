@@ -25,7 +25,6 @@ namespace SolarCompanyWebsite.Controllers
             ViewBag.Latitude = latitude;
             ViewBag.Longitude = longitude;
             ViewBag.SolarData = solarData;
-
             return View("SolarData"); // Ensure a view named SolarData.cshtml exists
         }
     }

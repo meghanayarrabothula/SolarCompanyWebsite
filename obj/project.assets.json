@@ -5567,19 +5567,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/abhinav_aaduru/.nuget/packages/": {}
+    "/Users/meghanayarrabothula/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/SolarCompanyWebsite.csproj",
+      "projectUniqueName": "/Users/meghanayarrabothula/Downloads/DIS/Project/New/SolarCompanyWebsite/SolarCompanyWebsite.csproj",
       "projectName": "SolarCompanyWebsite",
-      "projectPath": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/SolarCompanyWebsite.csproj",
-      "packagesPath": "/Users/abhinav_aaduru/.nuget/packages/",
-      "outputPath": "/Users/abhinav_aaduru/Desktop/assign 4/SolarCompanyWebsite-1/obj/",
+      "projectPath": "/Users/meghanayarrabothula/Downloads/DIS/Project/New/SolarCompanyWebsite/SolarCompanyWebsite.csproj",
+      "packagesPath": "/Users/meghanayarrabothula/.nuget/packages/",
+      "outputPath": "/Users/meghanayarrabothula/Downloads/DIS/Project/New/SolarCompanyWebsite/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/abhinav_aaduru/.nuget/NuGet/NuGet.Config"
+        "/Users/meghanayarrabothula/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
