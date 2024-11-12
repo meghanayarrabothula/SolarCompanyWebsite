@@ -2,8 +2,6 @@
   "version": 3,
   "targets": {
     "net8.0": {
-<<<<<<< HEAD
-=======
       "Humanizer/2.14.1": {
         "type": "package",
         "dependencies": {
@@ -1381,7 +1379,6 @@
           "lib/netcoreapp3.1/Mono.TextTemplating.dll": {}
         }
       },
->>>>>>> dheeraj-temp
       "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
@@ -1394,8 +1391,6 @@
             "related": ".xml"
           }
         }
-<<<<<<< HEAD
-=======
       },
       "NuGet.Common/6.11.0": {
         "type": "package",
@@ -1996,13 +1991,10 @@
             "rid": "win"
           }
         }
->>>>>>> dheeraj-temp
       }
     }
   },
   "libraries": {
-<<<<<<< HEAD
-=======
     "Humanizer/2.14.1": {
       "sha512": "/FUTD3cEceAAmJSCPN9+J+VhGwmL/C12jvwlyM1DFXShEMsBzvLzLqSrJ2rb+k/W2znKw7JyflZgZpyE+tI7lA==",
       "type": "package",
@@ -4597,7 +4589,6 @@
         "readme.md"
       ]
     },
->>>>>>> dheeraj-temp
     "Newtonsoft.Json/13.0.3": {
       "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
       "type": "package",
@@ -4627,8 +4618,6 @@
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
-<<<<<<< HEAD
-=======
     },
     "NuGet.Common/6.11.0": {
       "sha512": "T3bCiKUSx8wdYpcqr6Dbx93zAqFp689ee/oa1tH22XI/xl7EUzQ7No/WlE1FUqvEX1+Mqar3wRNAn2O/yxo94g==",
@@ -5569,40 +5558,33 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
->>>>>>> dheeraj-temp
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-<<<<<<< HEAD
-=======
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.6",
->>>>>>> dheeraj-temp
       "Newtonsoft.Json >= 13.0.3"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dheeraj Mekala\\.nuget\\packages\\": {}
+    "/Users/meghanayarrabothula/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dheeraj Mekala\\Source\\Repos\\SolarCompanyWebsite\\SolarCompanyWebsite.csproj",
+      "projectUniqueName": "/Users/meghanayarrabothula/Downloads/DIS/Project/DIS-Assignment-4/SolarCompanyWebsite/SolarCompanyWebsite.csproj",
       "projectName": "SolarCompanyWebsite",
-      "projectPath": "C:\\Users\\Dheeraj Mekala\\Source\\Repos\\SolarCompanyWebsite\\SolarCompanyWebsite.csproj",
-      "packagesPath": "C:\\Users\\Dheeraj Mekala\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dheeraj Mekala\\Source\\Repos\\SolarCompanyWebsite\\obj\\",
+      "projectPath": "/Users/meghanayarrabothula/Downloads/DIS/Project/DIS-Assignment-4/SolarCompanyWebsite/SolarCompanyWebsite.csproj",
+      "packagesPath": "/Users/meghanayarrabothula/.nuget/packages/",
+      "outputPath": "/Users/meghanayarrabothula/Downloads/DIS/Project/DIS-Assignment-4/SolarCompanyWebsite/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Dheeraj Mekala\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/meghanayarrabothula/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -5626,13 +5608,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
-<<<<<<< HEAD
-=======
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[8.0.6, )"
           },
->>>>>>> dheeraj-temp
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.3, )"
@@ -5657,7 +5636,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
